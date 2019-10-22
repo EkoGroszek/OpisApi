@@ -1,3 +1,17 @@
 Api ma analizowaæ tekst pod kontem iloœci du¿ych zanków, ma³ych znaków, znaków specjalnych, cyfr
 
-GET /analizeString/countLowerCase 
+Zapytanie zwraca true jesli tekst podany w parametrze {text} zawiera mala litere.
+GET/analizeString/lowerCase/{text} 
+
+Zapytanie zwraca true jesli tekst podany w parametrze {text} zawiera duze litere.
+GET/analizeString/upperCase/{text} 
+
+Zapytanie zwraca true jesli tekst podany w parametrze {text} zawiera znak specjalny.
+GET/analizeString/special/{text}
+ 
+Zapytanie zwraca true jesli tekst podany w parametrze {text} zawiera cyfre.
+GET/analizeString/numbers/{text}
+
+Zapytanie zwraca true jesli tekst podany w parametrze {text} zawiera fraze podana w parametrze {phraseToAnalize}.
+GET/analizeString/phrase/{text}/{phraseToAnalize}
+ 
